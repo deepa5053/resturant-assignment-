@@ -7,6 +7,7 @@ html, body, h1, h2, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    
 }
 
 header {
@@ -31,21 +32,65 @@ nav ul li {
     text-align: center;
     padding: 40px;
 }
-
+.registration-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 .registration-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 40px;
+    grid-gap: 20px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+/* Style the button on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Style labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style input fields and select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+.contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 .booking-form-container {
     display: flex;
     justify-content: center;
