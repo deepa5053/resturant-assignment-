@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Paradise</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hotel Paradise</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Your Dream Vacation Awaits</h2>
+        <p>Experience luxury like never before.</p>
+        <a href="registration.html" class="btn">Book Now</a>
+    </section>
+    
+    <!-- More content for the home page -->
+    <section class="booking-form-container">
+        <div class="booking-form">
+            <h2>Book Your Stay</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="input-group">
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="input-group">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type">
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Hotel Paradise</p>
+    </footer>
+</body>
+</html>
